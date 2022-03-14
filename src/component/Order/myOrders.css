@@ -1,0 +1,109 @@
+.myOrdersPage {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0 7vmax;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: fixed;
+  top: 10;
+  left: 0;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+#myOrdersHeading {
+  text-align: center;
+  font: 400 1.2vmax 'Inconsolata';
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  background-color: rgb(44, 44, 44);
+}
+
+.myOrdersTable {
+  background-color: white;
+}
+
+.myOrdersTable div {
+  font: 300 1vmax 'Inconsolata';
+  color: rgba(0, 0, 0, 0.678);
+  border: none;
+}
+
+.myOrdersTable a {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.myOrdersTable a:hover {
+  color: #df0e62;
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: #102055;
+  padding: 1vmax !important;
+  font-size: 1rem;
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+  font: 500 1.1vmax !important;
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyCart > svg {
+  font-size: 5vmax;
+  color: #ec255a;
+}
+.emptyCart > p {
+  font-size: 2vmax;
+}
+.emptyCart > a {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 1vmax 3vmax;
+  margin: 5px;
+  cursor: pointer;
+  font: 600 1vmax 'Inconsolata';
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .myOrdersPage {
+    padding: 0;
+    height: 90vh;
+  }
+
+  #myOrdersHeading {
+    font: 400 2.2vmax 'Inconsolata';
+    padding: 4vw;
+  }
+
+  .myOrdersTable div {
+    font: 300 4vw 'Inconsolata';
+  }
+
+  .MuiDataGrid-columnHeader {
+    padding: 20px !important;
+  }
+
+  .MuiDataGrid-columnHeader div {
+    font: 500 5vw 'Inconsolata' !important ;
+  }
+}
