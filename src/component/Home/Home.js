@@ -32,6 +32,7 @@ const Home = () => {
             <h3>
               <span className="surprise">"Surprise"</span> your loved one
             </h3>
+
             <h1>
               With the opportunity to choose all the great gifts for you beloved
               one.
